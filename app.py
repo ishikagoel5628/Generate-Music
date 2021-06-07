@@ -1,6 +1,6 @@
 # import sys
 # import re 
-# import os
+import os
 import numpy as np 
 
 import pickle
@@ -13,7 +13,7 @@ from flask import Flask, redirect, url_for, request, render_template,Response,se
 import tensorflow as tf
 from tensorflow.keras.models import load_model
 
-
+port = int(os.environ.get('PORT', 5000))
 
 app = Flask(__name__)
 UPLOAD_FOLDER= "C://Users//ishik//Documents//projects github//output"
@@ -170,4 +170,4 @@ def generate():
         # return send_from_directory(UPLOAD_FOLDER, new_file)
     return render_template("index.html",ouput=0)
 if __name__== "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=port,debug=True)
