@@ -2,21 +2,16 @@
 # import re 
 # import os
 import numpy as np 
-# import random
 
-# from glob import glob
 import pickle
-# from tensorflow import keras
 
 from music21 import converter, instrument, note, chord, stream
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Activation, Dense, LSTM, Dropout, Flatten
 
 from flask import Flask, redirect, url_for, request, render_template,Response,send_file,send_from_directory
-# from werkzeug.utils import secure_filename
 import tensorflow as tf
 from tensorflow.keras.models import load_model
-# import h5py
 
 
 
