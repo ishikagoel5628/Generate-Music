@@ -47,7 +47,6 @@ rsa==4.7.2
 six==1.15.0
 SQLAlchemy==1.4.15
 tensorboard==2.5.0
-tensorflow==2.5.0
 tensorflow-estimator==2.5.0
 termcolor==1.1.0
 typing-extensions==3.7.4.3
